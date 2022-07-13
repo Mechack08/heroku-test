@@ -10,6 +10,9 @@ app.get("/login", (req, res) => {
 app.get("/register", (req, res) => {
   res.send("Registration Page !");
 });
+app.get("/about", (req, res) => {
+  res.send("About us !");
+});
 
 app.listen(process.env.PORT || 3002, () => {
   console.log("Server on : http://localhost:3002");
